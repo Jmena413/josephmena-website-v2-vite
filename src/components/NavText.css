@@ -1,0 +1,13 @@
+.nav-text {
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-text:hover,
+.nav-text.active {
+    transform: scale(1.1) translateX(50px); /* Slightly enlarge the text and move it to the right */
+}
+
+.nav-text.active {
+    color: #64ffda; /* Change this to your desired active color */
+}
