@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Chip, Typography, Box, Grid2 } from "@mui/material";
+import { Paper, Chip, Typography, Box, Grid2, Link } from "@mui/material";
 import { useTheme } from '@mui/material/styles';
 
 const experienceData = [
@@ -56,6 +56,9 @@ const Experience = () => {
                     </Grid2>
                 </Paper>
             ))}
+            <Link variant="body1" underline="false" href="/JosephMenaSoftwareEngineerResume.pdf" target="_blank" rel="noopener" sx={{ display: 'block', marginBottom: '20px', textAlign: 'left', marginTop: '3em', fontWeight: 'bold' }}>
+                View My Resume
+            </Link>
         </Box>
     );
 }

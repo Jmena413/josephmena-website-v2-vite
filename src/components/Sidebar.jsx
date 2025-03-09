@@ -1,4 +1,4 @@
-import { Box, Typography, Grid2 } from '@mui/material';
+import { Box, Typography, Grid2, Link } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -72,15 +72,21 @@ const Sidebar = () => {
                     <NavText text="Projects" isSelected={selectedNav === 'Projects'} onClick={() => handleNavClick('Projects')} />
                 </Grid2>
             </Grid2>
-            <Grid2 container size={12} sx={{marginTop: 'auto'}}>
+            <Grid2 container size={12} spacing={1} sx={{marginTop: 'auto'}}>
                 <Grid2>
-                    <GitHubIcon/>
+                    <Link href="https://github.com/Jmena413" target="_blank" rel="noopener">
+                        <GitHubIcon/>
+                    </Link>
                 </Grid2>
                 <Grid2>
-                    <LinkedInIcon/>
+                    <Link href="https://www.linkedin.com/in/josephmenalopez/" target="_blank" rel="noopener">
+                        <LinkedInIcon/>
+                    </Link>
                 </Grid2>
                 <Grid2>
-                    <EmailIcon/>
+                    <Link href="mailto:josephmena.dev@gmail.com" target="_blank" rel="noopener">
+                        <EmailIcon/>
+                    </Link>
                 </Grid2>
             </Grid2>
         </>
